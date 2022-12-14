@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/vue-logo.png">
+    <img class="popper-logo" alt="Popper logo" src="../assets/logo.png">
     <Landing />
   </div>
 </template>
@@ -13,3 +13,14 @@ const router = useRouter()
 
 
 </script>
+
+<style>
+.popper-logo{
+  object-fit: contain;
+  width: 30vw;
+  margin-bottom: -40px;
+  border-bottom: 10px solid #807BE5;
+  border-radius: 0 0 60% 0px;
+}
+
+</style>

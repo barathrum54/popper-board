@@ -1,15 +1,19 @@
 <template>
-  <Menu/>
+  <!-- <Menu /> -->
   <router-view/>
+   
 </template>
 
 <script setup>
 import Menu from '@/components/Menu/Menu.vue'
 </script>
 <style>
-body{
+body {
   margin: 0;
+  padding-top: 80px;
+  overflow-y: hidden;
 }
+
 #app {
   font-family: Poppins, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,5 +38,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #807BE5;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
