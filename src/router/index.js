@@ -11,7 +11,7 @@ const routes = [
   {
     path: '/create',
     name: 'create',
-    component: HomeView
+    component: CreateView
     
   }
 ]
